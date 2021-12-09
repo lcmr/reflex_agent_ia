@@ -36,8 +36,8 @@ function test(states, count){
     estados.forEach((element, index) => {
         $('#contador').append(element + " - " +count[index]+"<br>");
     });
-    // Contador de estados menores a 2, si llega a 0 se termina la ejecución
-    end_agent = count.filter(value => value < 2)
+    // Contador de estados menores a 1, si llega a 0 se termina la ejecución
+    end_agent = count.filter(value => value < 1)
     // img = obtener_imagen(states.toString())
     img = estados.indexOf(states.toString()) + ".png"
     $("#img").attr('src','img/'+img)
